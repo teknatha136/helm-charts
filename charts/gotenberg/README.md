@@ -1,7 +1,7 @@
 # Gotenberg
 
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/gotenberg)](https://artifacthub.io/packages/helm/maikumori/gotenberg)
-![Version: 1.14.0](https://img.shields.io/badge/Version-1.14.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 8.25.1](https://img.shields.io/badge/AppVersion-8.25.1-informational?style=flat-square)
+![Version: 1.15.0](https://img.shields.io/badge/Version-1.15.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 8.25.1](https://img.shields.io/badge/AppVersion-8.25.1-informational?style=flat-square)
 
 This is a HELM chart for Gotenberg.
 
@@ -117,7 +117,6 @@ This allows you to stay current with Gotenberg releases without waiting for a ne
 | image.repository | string | `"gotenberg/gotenberg"` |  |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | imagePullSecrets | list | `[]` |  |
-| initContainers | list | `[]` | List of init containers for the gotenberg pod |
 | ingress.annotations | object | `{}` | Set the annotations of the ingress |
 | ingress.className | string | `""` | Set the class name of the ingress |
 | ingress.enabled | bool | `false` | Set to true to enable ingress record generation. WARNING: Gotenberg shouldn't be exposed to the internet. |
