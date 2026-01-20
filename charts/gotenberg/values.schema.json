@@ -38,6 +38,9 @@
         "imagePullSecrets": {
           "$ref": "#/$defs/helm-values.imagePullSecrets"
         },
+        "initContainers": {
+          "$ref": "#/$defs/helm-values.initContainers"
+        },
         "ingress": {
           "$ref": "#/$defs/helm-values.ingress"
         },
@@ -552,6 +555,12 @@
       "default": ""
     },
     "helm-values.imagePullSecrets": {
+      "type": "array",
+      "default": [],
+      "items": {}
+    },
+    "helm-values.initContainers": {
+      "description": "List of init containers for the gotenberg pod",
       "type": "array",
       "default": [],
       "items": {}

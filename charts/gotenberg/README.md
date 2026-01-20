@@ -117,12 +117,14 @@ This allows you to stay current with Gotenberg releases without waiting for a ne
 | image.repository | string | `"gotenberg/gotenberg"` |  |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | imagePullSecrets | list | `[]` |  |
+| initContainers | list | `[]` | List of init containers for the gotenberg pod |
 | ingress.annotations | object | `{}` | Set the annotations of the ingress |
 | ingress.className | string | `""` | Set the class name of the ingress |
 | ingress.enabled | bool | `false` | Set to true to enable ingress record generation. WARNING: Gotenberg shouldn't be exposed to the internet. |
 | ingress.hosts | list | `[]` | Set the hostnames of the ingress, see values.yaml for an example. |
 | ingress.labels | object | `{}` | Set the labels of the ingress |
 | ingress.tls | list | `[]` | Set the TLS configuration for the ingress, see values.yaml for an example. |
+| initContainers | list | `[]` | List of init containers for the gotenberg pod |
 | libreOffice.autoStart | bool | `false` | Automatically launch LibreOffce upon initialization if set to true; otherwise, LibreOffice will start at the time of the first conversion (default false) |
 | libreOffice.disableRoutes | bool | `false` | Disable the routes |
 | libreOffice.maxQueueSize | int | `0` | Maximum request queue size for LibreOffice. Set to 0 to disable this feature. |
